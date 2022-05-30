@@ -4,12 +4,10 @@ class BookControl extends React.Component {
   state = {
     value: this.props.book.shelf,
   };
-
   handleChange = (event) => {
     this.setState({ value: event.target.value });
     this.props.onChangeShelf(this.props.book, event.target.value);
   };
-
   render() {
     return (
       <div className="book-shelf-changer">

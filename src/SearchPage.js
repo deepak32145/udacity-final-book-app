@@ -1,13 +1,12 @@
 import React from "react";
-
-import { link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function SearchPage() {
   return (
     <div className="open-search">
-      <link to="/search">
-        <button>Add a Book</button>
-      </link>
+      <Link to="/search">
+        <button>Add a book</button>
+      </Link>
     </div>
   );
 }
